@@ -1,0 +1,102 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Lomba Desain Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="halaman1.html" class="back link">Daftar</a>
+  <div class="container">
+    <div class="header">
+      <h2>Pendaftaran Lomba Desain Web</h2>
+      <p class="subtitle">Tunjukkan kreativitasmu dalam kompetisi desain web!</p>
+    </div>
+    
+    <form>
+      <!-- Data Pribadi -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap <span class="required">*</span></label>
+          <input type="text" id="nama" name="nama" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="telepon">Nomor Telepon <span class="required">*</span></label>
+          <input type="tel" id="telepon" name="telepon" required>
+        </div>
+
+        <div class="form-group">
+          <label for="institusi">Institusi/Sekolah <span class="required">*</span></label>
+          <input type="text" id="institusi" name="institusi" required>
+        </div>
+      </div>
+
+      <!-- Kategori Lomba -->
+      <div class="form-group">
+        <label>Kategori Lomba <span class="required">*</span></label>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" id="pelajar" name="kategori" value="pelajar" required>
+            <label for="pelajar">Pelajar</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="mahasiswa" name="kategori" value="mahasiswa">
+            <label for="mahasiswa">Mahasiswa</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="umum" name="kategori" value="umum">
+            <label for="umum">Umum</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pengalaman -->
+      <div class="form-group">
+        <label for="pengalaman">Pengalaman di Bidang Web Design <span class="required">*</span></label>
+        <select id="pengalaman" name="pengalaman" required>
+          <option value="">Pilih Pengalaman</option>
+          <option value="pemula">Pemula (< 1 tahun)</option>
+          <option value="menengah">Menengah (1-3 tahun)</option>
+          <option value="ahli">Ahli (> 3 tahun)</option>
+        </select>
+      </div>
+
+      <!-- Portfolio -->
+      <div class="form-group">
+        <label for="portfolio">Link Portfolio/Github <span class="required">*</span></label>
+        <input type="url" id="portfolio" name="portfolio" placeholder="https://" required>
+        <p class="info-text">Masukkan link portfolio atau Github Anda</p>
+      </div>
+
+      <!-- Deskripsi -->
+      <div class="form-group">
+        <label for="deskripsi">Deskripsi Kemampuan dan Tools yang Dikuasai <span class="required">*</span></label>
+        <textarea id="deskripsi" name="deskripsi" required></textarea>
+        <p class="info-text">Jelaskan kemampuan web design Anda dan tools yang Anda kuasai</p>
+      </div>
+
+      <!-- Upload File -->
+      <div class="form-group">
+        <label>Upload Karya Terbaik <span class="required">*</span></label>
+        <div class="file-input">
+          <input type="file" id="karya" name="karya" accept=".pdf,.zip,.rar" required>
+          <label for="karya">
+            Klik atau seret file di sini (.pdf, .zip, atau .rar, max 10MB)
+          </label>
+        </div>
+        <p class="info-text">Upload screenshot atau file project web terbaik Anda</p>
+      </div>
+
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+  </div>
+</body>
+</html>
